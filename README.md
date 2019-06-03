@@ -19,8 +19,24 @@
   | Completed | Task | Assignment |
   | ---- |------|-----------|
   | :+1: | Create Github Repo | Kathryn |
+  | :+1: | Create README Document | Kathryn |
   | | Read about Estimote + SDK | Everyone |
   |  | Decide to work on existing project or from scratch | Everyone |
+  
+  - [ ] To do next week:
+  
+  | Task | Assignment |
+  |------|-----------|
+  | ?? | ?? |
+  
+- Week 2 (June 3 to June 9): 
+  
+  | Completed | Task | Assignment |
+  | ---- |------|-----------|
+  |  | Create Mock-Up UI |  |
+  |  |  |  |
+  |  | |  |
+  |  | |  |
   
   - [ ] To do next week:
   
