@@ -54,7 +54,7 @@ More info on positions:
   
   Meeting notes: Start from scratch, Project should use a small area of some building to test
   
-  **Meeting notes 2**: Not enough resources on web-application bluetooth - starting with mobile application (made w js) then transition to web app.
+  **Meeting notes 2**: Not enough resources on web-application bluetooth - starting with mobile application (made w js) then transition to web app. Use JS so easy to transition to web app later on.
   
 ### Long Term Goals:
 - [ ] Make a map of school
