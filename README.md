@@ -57,6 +57,23 @@ More info on positions:
   **Meeting notes 2**: Not enough resources on web-application with bluetooth - starting with mobile application (made w js) then transition to web app. Use JS so easy to transition to web app later on. Everyone will be back in July so we all can work with the Beacons, physically.
   Use Evothings Studio, an IoT IDE, compatible with Estimote beacons
   
+  - Week 3 (June 10 to June 17): 
+  
+  | Completed | Task | Details | Assignment |
+  | ---- |------|-----------|---|
+  | | Read the report | To get ideas on what challenges we might face | Everyone |
+  | | Learn JS (if not familiar) | Build a simple app (with Evothings/PhoneGap) that takes data from estimote beacons. Extra goal: Build app that sends dummy data to test server, decide libraries later | Everyone | 
+  | | Build simple server | Using Java or PHP | Everyone |
+  | | System Design Level 2 | can be done anytime | Kathryn |
+  
+  - [ ] To do next week:
+  
+  | Task | Assignment |
+  |------|-----------|
+  
+  
+  Meeting notes: Start from scratch, Project should use a small area of some building to test
+  
 ### Long Term Goals:
 - [ ] Make a map of school
 - [ ] Set up indoor bluetooth beacons
