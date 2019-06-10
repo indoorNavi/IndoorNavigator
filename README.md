@@ -7,12 +7,12 @@
 | Tommy | Back-end Server Side |
 | Yohen | |
 | Jennifer | Front & Back-end of Map |
-| Raghav | |
+| Raghav | Front & Back-end |
 | Kathryn | PM, Front-end UI |
 
 More info on positions: 
-- Back-end Server side - calculation, steps, etc.
-- Front-end Client side
+- Back-end Server side - calculation, steps, plotting on map
+- Front-end Client side - UI, map
 
 ### Goal of Project:
 #### To create a web-app that users can use to be able to navigate from one position to another in one building.
@@ -37,7 +37,7 @@ More info on positions:
   
   | Completed | Task | Details | Assignment |
   | ---- |------|-----------|---|
-  |  | Create System Design  | How would the client side comm. w/ the server side? | Everyone |
+  | :+1: | Create System Design (Level 1) | How would the client side comm. w/ the server side? | Everyone |
   |  | Decide who does what | Server side, Client side | Everyone |
   |  | Connect SDK to web app | SDK is mobile based, figure out how to make it web based | Everyone |
   | :+1: | Decide language use to build this web application | Abdallah suggested: PHP, JavaScript, HTML | Everyone |
@@ -54,7 +54,8 @@ More info on positions:
   
   Meeting notes: Start from scratch, Project should use a small area of some building to test
   
-  **Meeting notes 2**: Not enough resources on web-application bluetooth - starting with mobile application (made w js) then transition to web app. Use JS so easy to transition to web app later on.
+  **Meeting notes 2**: Not enough resources on web-application with bluetooth - starting with mobile application (made w js) then transition to web app. Use JS so easy to transition to web app later on. Everyone will be back in July so we all can work with the Beacons, physically.
+  Use Evothings Studio, an IoT IDE, compatible with Estimote beacons
   
 ### Long Term Goals:
 - [ ] Make a map of school
