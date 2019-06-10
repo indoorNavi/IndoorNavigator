@@ -5,10 +5,10 @@
 | Name | Position |
 |---|---|
 | Tommy | Back-end Server Side |
-| Yohen | |
+| Yohen | Back-end Server Side |
 | Jennifer | Front & Back-end of Map |
-| Raghav | Front & Back-end |
-| Kathryn | PM, Front-end UI |
+| Raghav | Front UX & Back-end Map |
+| Kathryn | PM, Front-end UI UX |
 
 More info on positions: 
 - Back-end Server side - calculation, steps, plotting on map
@@ -38,7 +38,7 @@ More info on positions:
   | Completed | Task | Details | Assignment |
   | ---- |------|-----------|---|
   | :+1: | Create System Design (Level 1) | How would the client side comm. w/ the server side? | Everyone |
-  |  | Decide who does what | Server side, Client side | Everyone |
+  | :+1:  | Decide who does what | Server side, Client side | Everyone |
   |  | Connect SDK to web app | SDK is mobile based, figure out how to make it web based | Everyone |
   | :+1: | Decide language use to build this web application | Abdallah suggested: PHP, JavaScript, HTML | Everyone |
   |  | How should we make a map? | Options: use a vector image (like google maps) or find use an existing map API | Everyone |
