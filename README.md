@@ -63,6 +63,7 @@ More info on positions:
   | ---- |------|-----------|---|
   | | Read the report | To get ideas on what challenges we might face | Everyone |
   | | Learn JS (if not familiar) | Build a simple app (with Evothings/PhoneGap) that takes data from estimote beacons. Extra goal: Build app that sends dummy data to test server, decide libraries later | Everyone | 
+  | | Try out Evothings | As above | Everyone |
   | | Build simple server | Using Java or PHP | Everyone |
   | | System Design Level 2 | can be done anytime | Kathryn |
   
@@ -70,12 +71,14 @@ More info on positions:
   
   | Task | Assignment |
   |------|-----------|
+  | As Above | All |
   
-  
-  Meeting notes: Start from scratch, Project should use a small area of some building to test
   
 ### Long Term Goals:
 - [ ] Make a map of school
 - [ ] Set up indoor bluetooth beacons
 
 ### Challenges:
+- Might occur from previous attempt:
+  - iBeacon distance accuracy
+
