@@ -57,7 +57,7 @@ More info on positions:
   **Meeting notes 2**: Not enough resources on web-application with bluetooth - starting with mobile application (made w js) then transition to web app. Use JS so easy to transition to web app later on. Everyone will be back in July so we all can work with the Beacons, physically.
   Use Evothings Studio, an IoT IDE, compatible with Estimote beacons
   
-  - Week 3 (June 10 to June 17): 
+  - Week 3 & 4 (June 10 to June 22): 
   
   | Completed | Task | Details | Assignment |
   | ---- |------|-----------|---|
@@ -77,6 +77,9 @@ More info on positions:
 ### Long Term Goals:
 - [ ] Make a map of school
 - [ ] Set up indoor bluetooth beacons
+- [ ] Reverse Search (using events to find location) *
+- [ ] Check if room is booked / Schedule (Study rooms) and booking of room *
+- [ ] Classroom changes can alert client
 
 ### Challenges:
 - Might occur from previous attempt:
