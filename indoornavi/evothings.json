@@ -1,0 +1,38 @@
+{
+  "name": "indoornavi",
+  "version": "1.0.0",
+  "title": "iBeacon Scan",
+  "description": "App that scans for iBeacons to be used as a starting point for iBeacons apps.",
+  "tags": [
+    {
+      "label": "ibeacon",
+      "type": "platform"
+    },
+    {
+      "label": "ble",
+      "type": "comm"
+    }
+  ],
+  "libraries": [
+    {
+      "name": "jquery",
+      "version": "2.1.1"
+    }
+  ],
+  "plugins": [
+    {
+      "name": "cordova-plugin-ibeacon",
+      "version": "3.4.3"
+    },
+    {
+      "name": "de.appplant.cordova.plugin.local-notification",
+      "version": "0.8.4"
+    }
+  ],
+  "index-file": "index.html",
+  "uuid": "cdc045dd-c35b-41aa-8be8-8dfa1156ccc5",
+  "icon": "app-icon.png",
+  "doc-url": "http://evothings.com/2.2/doc/examples/ibeacon-scan.html",
+  "long-description": "App that scans for iBeacons to be used as a starting point for iBeacons apps.",
+  "cordova-id": "com.evothings.examples.ibeaconscan"
+}
