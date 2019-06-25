@@ -57,21 +57,35 @@ More info on positions:
   **Meeting notes 2**: Not enough resources on web-application with bluetooth - starting with mobile application (made w js) then transition to web app. Use JS so easy to transition to web app later on. Everyone will be back in July so we all can work with the Beacons, physically.
   Use Evothings Studio, an IoT IDE, compatible with Estimote beacons
   
-  - Week 3 & 4 (June 10 to June 22): 
+- Week 3 & 4 (June 10 to June 22): 
   
   | Completed | Task | Details | Assignment |
   | ---- |------|-----------|---|
-  | | Read the report | To get ideas on what challenges we might face | Everyone |
+  | :+1: | Read the report | To get ideas on what challenges we might face | Everyone |
   | | Learn JS (if not familiar) | Build a simple app (with Evothings/PhoneGap) that takes data from estimote beacons. Extra goal: Build app that sends dummy data to test server, decide libraries later | Everyone | 
-  | | Try out Evothings | As above | Everyone |
+  | :+1: | Try out Evothings | As above | Everyone |
   | | Build simple server | Using Java or PHP | Everyone |
-  | | System Design Level 2 | can be done anytime | Kathryn |
+  | :+1: | System Design Level 2 | can be done anytime | Kathryn |
   
   - [ ] To do next week:
   
   | Task | Assignment |
   |------|-----------|
   | As Above | All |
+  
+- Week 5 (June 23 to July 3 (Wednesday) ): 
+  
+  | Completed | Task | Details | Assignment |
+  | ---- |------|-----------|---|
+  | | Build test map | The test map will be a text array of dummy Nodes as JSON objects (eg. Shortest-path). These dummy nodes (JSON Objects) should contain: id, xy coordinates, type of room (Room/Hallway), events, adjacent nodes, and other data if any. | Jennifer, Raghav |
+  | | Work on UI Design Prototype | Create a skeleton system UI, prototype screen-shots of system | Kathryn, Yohen, Tommy |
+  
+  - [ ] To do next week:
+  
+  | Task | Assignment |
+  |------|-----------|
+  | Find out how to make array data display on a map in JS / Evothings | Jennifer, Raghav |
+  | Create skeleton of system design to working app | Kathryn, Yohen, Tommy |
   
   
 ### Long Term Goals:
@@ -80,6 +94,7 @@ More info on positions:
 - [ ] Reverse Search (using events to find location) *
 - [ ] Check if room is booked / Schedule (Study rooms) and booking of room *
 - [ ] Classroom changes can alert client
+- [ ] Immediate Temperature changes can alert all clients
 
 ### Challenges:
 - Might occur from previous attempt:
