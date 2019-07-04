@@ -77,14 +77,17 @@ More info on positions:
   
   | Completed | Task | Details | Assignment |
   | ---- |------|-----------|---|
-  | | Build test map | The test map will be a text array of dummy Nodes as JSON objects (eg. Shortest-path). These dummy nodes (JSON Objects) should contain: id, xy coordinates, type of room (Room/Hallway), events, adjacent nodes, and other data if any. | Jennifer, Raghav |
+  | | Build test map | The test map will be an array of dummy Nodes as JSON objects (eg. Shortest-path). These dummy nodes (JSON Objects) should contain: id, xy coordinates, type of room (Room/Hallway), events, adjacent nodes, and other data if any. | Jennifer, Raghav |
+  | | Create Calculation Code | Code used to create the graph / map | Raghav |
   | | Work on UI Design Prototype | Create a skeleton system UI, prototype screen-shots of system | Kathryn, Yohen, Tommy |
   
   - [ ] To do next week:
   
   | Task | Assignment |
   |------|-----------|
-  | Find out how to make array data display on a map in JS / Evothings | Jennifer, Raghav |
+  | Find out how to make array data display on a map Evothings | Jennifer, Raghav |
+  | Create Calculation Code | Raghav |
+  | Use data to construct graph | Raghav, Jennifer |
   | Create skeleton of system design to working app | Kathryn, Yohen, Tommy |
   
   
@@ -99,4 +102,7 @@ More info on positions:
 ### Challenges:
 - Might occur from previous attempt:
   - iBeacon distance accuracy
+- :new: Walls, Ceilings/Floors may hinder scanning of beacons
+- 
 
+System Design Lvl 2:
