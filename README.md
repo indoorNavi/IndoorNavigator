@@ -105,4 +105,24 @@ More info on positions:
 - :new: Walls, Ceilings/Floors may hinder scanning of beacons
 - 
 
-System Design Lvl 2:
+# :new:
+### System Design Lvl 2:
+
+![System Design](sysdesign2.png)
+
+
+### Finding the Path to Navigate
+When scanned, the Proximity Beacon will send the following data to the device (that is being asked for):
+1. UUID - fixed by manu.
+2. Major (In our case, the floor of a building)
+3. Minor (In our case, the area of a floor in that building)
+4. Proximity - how close the beacon is to the device
+5. RSSI - signal strength.
+
+To find the user's estimated position,
+1. Scan for the nearest Beacons.
+2. Using the estimated proximity / RSSI, we can detect which Minor region the user is positioned.
+
+To calculate steps,
+0. Target will have a Minor integer assigned to it.
+1. Use shortest path from Minor integer of target, until Minor integer of start location / user.
