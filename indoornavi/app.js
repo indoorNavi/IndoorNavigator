@@ -129,8 +129,29 @@ var app = (function()
 		}
 	}
 
-	function getLocation(rssi1, rssi2, rssi3, rssi4) {
-		
+	//https://community.estimote.com/hc/en-us/articles/201636913-What-are-Broadcasting-Power-RSSI-and-other-characteristics-of-a-beacon-s-signal-
+	//beacon array, ascending order in RSSI (we only use the top 4 closest beacons)
+	function getLocation(beacons) {
+		var floor = beacons[0].major;
+		var region = -1;
+
+		if(beacons[0].minor == beacons[1].minor) {
+			if(beacons[2].minor > beacon[0].minor && beacons[3].minor > beacon[0].minor) {
+				region = beacons[0].minor;
+			} else {
+				region = beacons[1].minor;
+			}
+		} else {
+			region = Math.min(beacons[0].minor, beacons[1].minor);
+		}
+
+
+		var location = {
+			floor: floor,
+			region: region
+		};
+
+		return location;
 	}
 
 	function displayBeaconList()
