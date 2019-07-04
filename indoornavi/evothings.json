@@ -1,7 +1,7 @@
 {
   "name": "indoornavi",
   "version": "1.0.0",
-  "title": "iBeacon Scan",
+  "title": "iBeacon Scan UBC Okanagan",
   "description": "App that scans for iBeacons to be used as a starting point for iBeacons apps.",
   "tags": [
     {

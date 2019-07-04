@@ -17,6 +17,11 @@ var app = (function()
 		{uuid:'585CDE93-1B01-42CC-9A13-25009BEDC65E'},	// Dialog Semiconductor.
 	];
 
+	setInterval(function() {
+		var today = new Date();
+		document.getElementById('foo').innerHTML = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+	}, 1000);
+
 	// Background detection.
 	var notificationID = 0;
 	var inBackground = false;
@@ -122,6 +127,10 @@ var app = (function()
 				.fail(console.error)
 				.done();
 		}
+	}
+
+	function getLocation(rssi1, rssi2, rssi3, rssi4) {
+		
 	}
 
 	function displayBeaconList()
