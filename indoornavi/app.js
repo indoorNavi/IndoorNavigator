@@ -132,8 +132,10 @@ var app = (function()
 	//https://community.estimote.com/hc/en-us/articles/201636913-What-are-Broadcasting-Power-RSSI-and-other-characteristics-of-a-beacon-s-signal-
 	//beacon array, ascending order in RSSI (we only use the top 4 closest beacons)
 	function getLocation(beacons) {
-		var floor = beacons[0].major;
+		//The closest beacon's major is the floor they are on
+		const floor = beacons[0].major;
 		var region = -1;
+
 
 		if(beacons[0].minor == beacons[1].minor) {
 			if(beacons[2].minor > beacon[0].minor && beacons[3].minor > beacon[0].minor) {
