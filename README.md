@@ -79,7 +79,27 @@ More info on positions:
   | ---- |------|-----------|---|
   | | Build test map | The test map will be an array of dummy Nodes as JSON objects (eg. Shortest-path). These dummy nodes (JSON Objects) should contain: id, xy coordinates, type of room (Room/Hallway), events, adjacent nodes, and other data if any. | Jennifer, Raghav |
   | | Create Calculation Code | Code used to create the graph / map | Raghav |
-  | | Work on UI Design Prototype | Create a skeleton system UI, prototype screen-shots of system | Kathryn, Yohen, Tommy |
+  | :+1: | Work on UI Design Prototype | Create a skeleton system UI, prototype screen-shots of system | Kathryn, Yohen, Tommy |
+  
+  - [ ] To do next week:
+  
+  | Task | Assignment |
+  |------|-----------|
+  | Find out how to make array data display on a map Evothings | Jennifer, Raghav |
+  | Create Calculation Code | Raghav |
+  | Use data to construct graph | Raghav, Jennifer |
+  | Create skeleton of system design to working app | Kathryn, Yohen, Tommy |
+  | Take photo of school floor plan | Kathryn |
+  
+- Week 6 (July 4 to July 10): 
+  
+  | Completed | Task | Details | Assignment |
+  | ---- |------|-----------|---|
+  | | School floor plan photo | Photo of emergency exits? Fipke Floor 1 | Kathryn |
+  | | Test beacons that just arrived | Test the beacons | Kathryn |
+  | | Start building front-end | Based on the prototype, build the interface (without map) on Evothings | Kathryn, Yohen |
+  | | Create calculation code | Code used to create the graph/map | Raghav |
+  | | Start designing the map | First, we need to know what to use to implement the map. (Once we get the beacons data, find a way to get them displayed.)| Jennifer, Tommy |
   
   - [ ] To do next week:
   
@@ -90,7 +110,6 @@ More info on positions:
   | Use data to construct graph | Raghav, Jennifer |
   | Create skeleton of system design to working app | Kathryn, Yohen, Tommy |
   
-  
 ### Long Term Goals:
 - [ ] Make a map of school
 - [ ] Set up indoor bluetooth beacons
@@ -98,11 +117,12 @@ More info on positions:
 - [ ] Check if room is booked / Schedule (Study rooms) and booking of room *
 - [ ] Classroom changes can alert client
 - [ ] Immediate Temperature changes can alert all clients
+- [ ] Potential Business Idea???
 
 ### Challenges:
 - Might occur from previous attempt:
   - iBeacon distance accuracy
-- :new: Walls, Ceilings/Floors may hinder scanning of beacons
+- Walls, Ceilings/Floors may hinder scanning of beacons
 - 
 
 # :new:
