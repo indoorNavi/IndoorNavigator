@@ -31,6 +31,7 @@ var app = (function()
 	var inBackground = false;
 	document.addEventListener('pause', function() { inBackground = true });
 	document.addEventListener('resume', function() { inBackground = false });
+	// document.getElementById('posBtn').addEventListener('click', calculatePosition);
 
 	// Dictionary of beacons.
 	var beacons = {};
@@ -56,6 +57,7 @@ var app = (function()
 
 		// Display refresh timer.
 		updateTimer = setInterval(displayBeaconList, 500);
+		setInterval(calculatePosition, 5000);
 	}
 
 	function startScan()
@@ -160,6 +162,21 @@ var app = (function()
 		return location;
 	}
 
+	function calculateRssiAvg(uuid) {
+		var average = 0; 
+		RSSIs[uuid].forEach(function(rssi) {
+			average += rssi;
+		});
+		return average / RSSIs[uuid].length;
+	}
+
+	function calculatePosition() {
+		//alert('test');
+		regions.forEach(function(beacon) {
+			$('#' + beacon.uuid).html(calculateRssiAvg(beacon.uuid));
+		});
+	}
+
 	function displayBeaconList()
 	{
 		// Clear beacon list.
@@ -186,10 +203,13 @@ var app = (function()
 					+	'Minor: ' + beacon.minor + '<br />'
 					+	'Proximity: ' + beacon.proximity + '<br />'
 					+	'RSSI: ' + beacon.rssi + '<br />'
+					+   'RSSI Avg.: <span id="' + beacon.uuid + '">' + calculateRssiAvg(beacon.uuid) + '</span><br />'
 					+ 	'<div style="background:rgb(255,128,64);height:20px;width:'
 					+ 		rssiWidth + '%;"></div>'
 					+ '</li>'
 				);
+
+				alert(document.getElementById(beacon.uuid));
 
 				/* ADDED CODE */
 				if(RSSIs[beacon.uuid].length == 5) {
