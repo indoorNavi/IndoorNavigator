@@ -6,14 +6,20 @@ var app = (function()
 	// Specify your beacon 128bit UUIDs here.
 	var regions =
 	[
-		// Estimote Beacon factory UUID.
-		{uuid:'B9407F30-F5F8-466E-AFF9-25556B57FE6D'},
 		// Our UUIDs for beacons in our lab.
 		{uuid:'B6559F92-9D89-462F-8B1F-3F70CAADA912'},
 		{uuid:'4264BEA3-D32C-4029-BE05-A5FF9A43979C'},
 		{uuid:'11ACF7E9-6D5A-4790-8F43-243DFE083A57'},
 		{uuid:'8912BA10-776B-4EA5-B64E-E8A3154B1F13'},
 	];
+
+	//RSSI values for each beacon (corresponding to their UUIDs)
+	var RSSIs = {
+		"B6559F92-9D89-462F-8B1F-3F70CAADA912": [],
+		"4264BEA3-D32C-4029-BE05-A5FF9A43979C": [],
+		"11ACF7E9-6D5A-4790-8F43-243DFE083A57": [],
+		"8912BA10-776B-4EA5-B64E-E8A3154B1F13": []
+	};
 
 	setInterval(function() {
 		var today = new Date();
@@ -185,6 +191,15 @@ var app = (function()
 					+ '</li>'
 				);
 
+				/* ADDED CODE */
+				if(RSSIs[beacon.uuid].length == 5) {
+					//If the size is equal to 5, get rid of the oldest
+					//recorded RSSI
+					RSSIs[beacon.uuid].shift();
+				}
+				//Put the latest RSSI value in
+				RSSIs[beacon.uuid].push(beacon.rssi);
+				/* ADDED CODE */
 				$('#warning').remove();
 				$('#found-beacons').append(element);
 			}
