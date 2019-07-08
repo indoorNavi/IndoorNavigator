@@ -22,6 +22,8 @@
 	<script src="libs/jquery/jquery.js"></script>
 	<script src="libs/evothings/evothings.js"></script>
 	<script src="libs/evothings/ui/ui.js"></script>
+	<script type="text/javascript" src="libs/paperjs/dist/paper-full.js"></script>
+	<script type="text/paperscript" src="map_view.js"></script>
 	<script src="app.js"></script>
 
 </head>
@@ -38,6 +40,9 @@
 		<!--<button class="menu" onclick=""><img src="ui/images/menu.svg" /></button>-->
 	</header>
 
+	<div id="map-view">
+		<canvas id="map-canvas"></canvas>
+	</div>
 	<h1 id="foo">iBeacon Scan hello world</h1>
 	<p id="warning">To detect iBeacons you will have to add the 128bit UUID's you
 	are looking for to the regions array in app.js of the iBeacon example.
