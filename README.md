@@ -4,11 +4,11 @@
 ### Collaborators and Positions:
 | Name | Position |
 |---|---|
-| Tommy | Back-end Server Side |
-| Yohen | Back-end Server Side |
-| Jennifer | Front & Back-end of Map |
-| Raghav | Front UX & Back-end Map |
-| Kathryn | PM, Front-end UI UX |
+| Tommy | Webserver / Database |
+| Yohen | Displaying Map |
+| Jennifer | Plotting Map |
+| Raghav | User positioning / Calculations |
+| Kathryn | PM, UI UX |
 
 More info on positions: 
 - Back-end Server side - calculation, steps, plotting on map
@@ -95,11 +95,12 @@ More info on positions:
   
   | Completed | Task | Details | Assignment |
   | ---- |------|-----------|---|
-  | | School floor plan photo | Photo of emergency exits? Fipke Floor 1 | Kathryn |
-  | | Test beacons that just arrived | Test the beacons | Kathryn |
-  | | Start building front-end | Based on the prototype, build the interface (without map) on Evothings | Kathryn, Yohen |
+  | :+1: | School floor plan photo | Photo of emergency exits? Fipke Floor 1 | Kathryn |
+  | :+1: | Test beacons that just arrived | Test the beacons | Kathryn |
+  | | Start building front-end | Based on the prototype, build the interface (without map) on Evothings | Kathryn |
   | | Create calculation code | Code used to create the graph/map | Raghav |
-  | | Start designing the map | First, we need to know what to use to implement the map. (Once we get the beacons data, find a way to get them displayed.)| Jennifer, Tommy |
+  | | Figure out how to display map | First, we need to know what to use to implement the map. (Once we get the beacons data, find a way to get them displayed.)| Jennifer, Yohen |
+  | | Display JSON objects | Put JSON objects on a table on a  | Tommy |
   
   - [ ] To do next week:
   
@@ -118,6 +119,7 @@ More info on positions:
 - [ ] Classroom changes can alert client
 - [ ] Immediate Temperature changes can alert all clients
 - [ ] Potential Business Idea???
+- [ ] Accessability for those w disabilities
 
 ### Challenges:
 - Might occur from previous attempt:
@@ -146,3 +148,4 @@ To find the user's estimated position,
 To calculate steps,
 0. Target will have a Minor integer assigned to it.
 1. Use shortest path from Minor integer of target, until Minor integer of start location / user.
+
