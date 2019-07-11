@@ -17,6 +17,9 @@ More info on positions:
 ### Goal of Project:
 #### To create a web-app that users can use to be able to navigate from one position to another in one building.
 
+### Tools used:
+- HTML5 Canvas + SVG
+
 ### Weekly Progress:
 - Week 1 (May 27 to June 2): 
   
@@ -127,7 +130,6 @@ More info on positions:
 - Walls, Ceilings/Floors may hinder scanning of beacons
 - 
 
-# :new:
 ### System Design Lvl 2:
 
 ![System Design](sysdesign2.png)
@@ -148,4 +150,3 @@ To find the user's estimated position,
 To calculate steps,
 0. Target will have a Minor integer assigned to it.
 1. Use shortest path from Minor integer of target, until Minor integer of start location / user.
-
