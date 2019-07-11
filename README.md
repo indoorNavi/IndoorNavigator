@@ -101,8 +101,8 @@ More info on positions:
   | :+1: | School floor plan photo | Photo of emergency exits? Fipke Floor 1 | Kathryn |
   | :+1: | Test beacons that just arrived | Test the beacons | Kathryn |
   | | Start building front-end | Based on the prototype, build the interface (without map) on Evothings | Kathryn |
-  | | Create calculation code | Code used to create the graph/map | Raghav |
-  | | Figure out how to display map | First, we need to know what to use to implement the map. (Once we get the beacons data, find a way to get them displayed.)| Jennifer, Yohen |
+  | | Create calculation code | Code used to create the graph/map | Raghav, Jennifer |
+  | | Figure out how to display map | First, we need to know what to use to implement the map. (Once we get the beacons data, find a way to get them displayed.)| Kathryn, Yohen |
   | | Display JSON objects | Put JSON objects on a table on a  | Tommy |
   
   - [ ] To do next week:
@@ -111,15 +111,18 @@ More info on positions:
   |------|-----------|
   | Find out how to make array data display on a map Evothings | Jennifer, Raghav |
   | Create Calculation Code | Raghav |
+  | Overlay Minor regions on map | Yohen |
   | Use data to construct graph | Raghav, Jennifer |
-  | Create skeleton of system design to working app | Kathryn, Yohen, Tommy |
+  | Table of Minor # | Tommy |
   
 ### Long Term Goals:
 - [ ] Make a map of school
 - [ ] Set up indoor bluetooth beacons
+- [ ] Microwave locations Washroom / Assets etc.
 - [ ] Reverse Search (using events to find location) *
 - [ ] Check if room is booked / Schedule (Study rooms) and booking of room *
 - [ ] Classroom changes can alert client
+- [ ] Room information (# of chairs, etc.)
 - [ ] Immediate Temperature changes can alert all clients
 - [ ] Potential Business Idea???
 - [ ] Accessability for those w disabilities
