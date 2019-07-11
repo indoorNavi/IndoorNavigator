@@ -21,6 +21,13 @@ var app = (function()
 		"8912BA10-776B-4EA5-B64E-E8A3154B1F13": []
 	};
 
+	var baseRSSIs = {
+		"B6559F92-9D89-462F-8B1F-3F70CAADA912": -62.6,//dark-blue 
+		"4264BEA3-D32C-4029-BE05-A5FF9A43979C": -64.6, //green
+		"11ACF7E9-6D5A-4790-8F43-243DFE083A57": -60.2, //white
+		"8912BA10-776B-4EA5-B64E-E8A3154B1F13": -61 //light-blue
+	};
+
 	setInterval(function() {
 		var today = new Date();
 		document.getElementById('foo').innerHTML = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
@@ -163,11 +170,15 @@ var app = (function()
 	}
 
 	function calculateRssiAvg(uuid) {
-		var average = 0; 
+		var sum = 0; 
 		RSSIs[uuid].forEach(function(rssi) {
-			average += rssi;
+			sum += rssi;
 		});
-		return average / RSSIs[uuid].length;
+		return sum / RSSIs[uuid].length;
+	}
+
+	function calculateDistance(uuid, averageRssi) {
+		return Math.pow(10, (averageRssi - baseRSSIs[uuid]) / (-20));
 	}
 
 	function calculatePosition() {
@@ -195,6 +206,7 @@ var app = (function()
 				if (beacon.rssi < -100) { rssiWidth = 100; }
 				else if (beacon.rssi < 0) { rssiWidth = 100 + beacon.rssi; }
 
+				var averageRssi = calculateRssiAvg(beacon.uuid);
 				// Create tag to display beacon data.
 				var element = $(
 					'<li>'
@@ -203,13 +215,14 @@ var app = (function()
 					+	'Minor: ' + beacon.minor + '<br />'
 					+	'Proximity: ' + beacon.proximity + '<br />'
 					+	'RSSI: ' + beacon.rssi + '<br />'
-					+   'RSSI Avg.: <span id="' + beacon.uuid + '">' + calculateRssiAvg(beacon.uuid) + '</span><br />'
+					+   'RSSI Avg.: <span id="' + beacon.uuid + '">' + averageRssi + '</span><br />'
+					+ 	'Distance: ' + calculateDistance(beacon.uuid, averageRssi) + '<br />'
 					+ 	'<div style="background:rgb(255,128,64);height:20px;width:'
 					+ 		rssiWidth + '%;"></div>'
 					+ '</li>'
 				);
 
-				alert(document.getElementById(beacon.uuid));
+				//alert(document.getElementById(beacon.uuid));
 
 				/* ADDED CODE */
 				if(RSSIs[beacon.uuid].length == 5) {
