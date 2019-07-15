@@ -22,7 +22,7 @@ var app = (function()
 	};
 
 	var baseRSSIs = {
-		"B6559F92-9D89-462F-8B1F-3F70CAADA912": -62.6,//dark-blue 
+		"B6559F92-9D89-462F-8B1F-3F70CAADA912": -62.6,//dark-blue
 		"4264BEA3-D32C-4029-BE05-A5FF9A43979C": -64.6, //green
 		"11ACF7E9-6D5A-4790-8F43-243DFE083A57": -60.2, //white
 		"8912BA10-776B-4EA5-B64E-E8A3154B1F13": -61 //light-blue
@@ -170,7 +170,7 @@ var app = (function()
 	}
 
 	function calculateRssiAvg(uuid) {
-		var sum = 0; 
+		var sum = 0;
 		RSSIs[uuid].forEach(function(rssi) {
 			sum += rssi;
 		});
@@ -225,13 +225,16 @@ var app = (function()
 				//alert(document.getElementById(beacon.uuid));
 
 				/* ADDED CODE */
-				if(RSSIs[beacon.uuid].length == 5) {
-					//If the size is equal to 5, get rid of the oldest
-					//recorded RSSI
+				if(RSSIs[beacon.uuid].length<=5)
+				{
+					RSSIs[beacon.uuid].push(beacon.rssi);
+				}
+				else {
+					RSSIs[beacon.uuid].push(beacon.rssi);
+					RSSIs[beacon.uuid].sort();
+					RSSIs[beacon.uuid].pop();
 					RSSIs[beacon.uuid].shift();
 				}
-				//Put the latest RSSI value in
-				RSSIs[beacon.uuid].push(beacon.rssi);
 				/* ADDED CODE */
 				$('#warning').remove();
 				$('#found-beacons').append(element);
