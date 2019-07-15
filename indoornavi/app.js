@@ -185,7 +185,7 @@ var app = (function()
 	}
 
 	function calculateDistance(uuid, averageRssi) {
-		return Math.pow(10, (averageRssi - baseRSSIs[uuid]) / (-20));
+		return Math.pow(10, (baseRSSIs[uuid] - averageRssi) / -20);
 	}
 
 	function calculatePosition() {
@@ -201,7 +201,7 @@ var app = (function()
 		$('#found-beacons').empty();
 
 		var timeNow = Date.now();
-		
+
 		// Update beacon list.
 		$.each(beacons, function(key, beacon)
 		{
@@ -223,8 +223,8 @@ var app = (function()
 					+	'Minor: ' + beacon.minor + '<br />'
 					+	'Proximity: ' + beacon.proximity + '<br />'
 					+	'RSSI: ' + beacon.rssi + '<br />'
-					+   'RSSI Avg.: <span id="' + beacon.uuid + '">' + averageRssi + '</span><br />'
-					+ 	'Distance: ' + calculateDistance(beacon.uuid, averageRssi) + '<br />'
+					+   'RSSI Avg.: <span id="' + beacon.uuid + '">' + Math.round(averageRssi * 1000) / 1000 + '</span><br />'
+					+ 	'Distance: ' + Math.round(calculateDistance(beacon.uuid, averageRssi) * 1000) / 1000 + '<br />'
 					+ 	'<div style="background:rgb(255,128,64);height:20px;width:'
 					+ 		rssiWidth + '%;"></div>'
 					+ '</li>'
@@ -235,8 +235,7 @@ var app = (function()
 				/* ADDED CODE */
 				if(RSSIs[beacon.uuid].length<=5) {
 					RSSIs[beacon.uuid].push(beacon.rssi);
-				}
-				else {
+				} else {
 					RSSIs[beacon.uuid].push(beacon.rssi);
 					RSSIs[beacon.uuid].sort();
 					RSSIs[beacon.uuid].pop();
