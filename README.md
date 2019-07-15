@@ -102,8 +102,8 @@ More info on positions:
   | :+1: | Test beacons that just arrived | Test the beacons | Kathryn |
   | | Start building front-end | Based on the prototype, build the interface (without map) on Evothings | Kathryn |
   | | Create calculation code | Code used to create the graph/map | Raghav, Jennifer |
-  | | Figure out how to display map | First, we need to know what to use to implement the map. (Once we get the beacons data, find a way to get them displayed.)| Kathryn, Yohen |
-  | | Display JSON objects | Put JSON objects on a table on a  | Tommy |
+  | :+1: | Figure out how to display map | First, we need to know what to use to implement the map. (Once we get the beacons data, find a way to get them displayed.)| Kathryn, Yohen |
+  | | Display JSON objects | Put JSON objects on a table | Tommy |
   
   - [ ] To do next week:
   
@@ -114,6 +114,24 @@ More info on positions:
   | Overlay Minor regions on map | Yohen |
   | Use data to construct graph | Raghav, Jennifer |
   | Table of Minor # | Tommy |
+  
+  - Week 7 (July 11 to July 18): 
+  
+  | Completed | Task | Details | Assignment |
+  | ---- |------|-----------|---|
+  | :+1: | School floor plan photo | Photo of emergency exits? Fipke Floor 1 | Kathryn |
+  | :+1: | Test beacons that just arrived | Test the beacons | Kathryn |
+  | | Start building front-end | Based on the prototype, build the interface (without map) on Evothings | Kathryn |
+  | | Create calculation code | Code used to create the graph/map | Raghav, Jennifer |
+  | | Plot user location | Use the 4 Beacons to find the user's approximate location - using coordinates | Raghav, Jennifer |
+  | | Plot user location | Visualization of user location on canvas map | Kathryn, Yohen |
+  | | JSON file read to HTML | Put JSON objects from a JSON file on a table on a HTML file | Tommy |
+  
+  - [ ] To do next week:
+  
+  | Task | Assignment |
+  |------|-----------|
+ 
   
 ### Long Term Goals:
 - [ ] Make a map of school
