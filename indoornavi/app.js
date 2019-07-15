@@ -21,6 +21,13 @@ var app = (function()
 		"8912BA10-776B-4EA5-B64E-E8A3154B1F13": []
 	};
 
+	var colors = {
+		"B6559F92-9D89-462F-8B1F-3F70CAADA912": "dark-blue",//dark-blue
+		"4264BEA3-D32C-4029-BE05-A5FF9A43979C": "green", //green
+		"11ACF7E9-6D5A-4790-8F43-243DFE083A57": "white", //white
+		"8912BA10-776B-4EA5-B64E-E8A3154B1F13": "light-blue" //light-blue
+	};
+
 	var baseRSSIs = {
 		"B6559F92-9D89-462F-8B1F-3F70CAADA912": -62.6,//dark-blue
 		"4264BEA3-D32C-4029-BE05-A5FF9A43979C": -64.6, //green
@@ -194,7 +201,7 @@ var app = (function()
 		$('#found-beacons').empty();
 
 		var timeNow = Date.now();
-
+		
 		// Update beacon list.
 		$.each(beacons, function(key, beacon)
 		{
@@ -211,6 +218,7 @@ var app = (function()
 				var element = $(
 					'<li>'
 					+	'<strong>UUID: ' + beacon.uuid + '</strong><br />'
+					+	'<strong>Color: ' + colors[beacon.uuid] + '</strong><br />'
 					+	'Major: ' + beacon.major + '<br />'
 					+	'Minor: ' + beacon.minor + '<br />'
 					+	'Proximity: ' + beacon.proximity + '<br />'
@@ -225,8 +233,7 @@ var app = (function()
 				//alert(document.getElementById(beacon.uuid));
 
 				/* ADDED CODE */
-				if(RSSIs[beacon.uuid].length<=5)
-				{
+				if(RSSIs[beacon.uuid].length<=5) {
 					RSSIs[beacon.uuid].push(beacon.rssi);
 				}
 				else {
