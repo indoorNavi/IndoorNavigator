@@ -1,0 +1,44 @@
+{
+    "User":
+    {    "Major":"1",
+        "Minor":"1",
+        "RSSI":"100, 95, 95, 90"
+    },
+    "Beacons":[
+    {
+        "UUID":"123",
+        "Major":"1", 
+        "Minor":"1",
+        "Proximity":"Near",
+        "RSSI":"100"
+    },
+    {
+        "UUID":"1233",
+        "Major":"1", 
+        "Minor":"1",
+        "Proximity":"Near",
+        "RSSI":"95"
+    },
+    {
+        "UUID":"1234",
+        "Major":"1", 
+        "Minor":"1",
+        "Proximity":"Near",
+        "RSSI":"95"
+    },
+    {
+        "UUID":"1235",
+        "Major":"1", 
+        "Minor":"1",
+        "Proximity":"Near",
+        "RSSI":"90"
+    },
+    {
+        "UUID":"1623",
+        "Major":"1", 
+        "Minor":"2",
+        "Proximity":"Intermediate",
+        "RSSI":"85"
+    }
+    ]
+}
