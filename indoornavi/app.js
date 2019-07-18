@@ -21,6 +21,13 @@ var app = (function()
 		"8912BA10-776B-4EA5-B64E-E8A3154B1F13": []
 	};
 
+	var distances = {
+		"B6559F92-9D89-462F-8B1F-3F70CAADA912": [],
+		"4264BEA3-D32C-4029-BE05-A5FF9A43979C": [],
+		"11ACF7E9-6D5A-4790-8F43-243DFE083A57": [],
+		"8912BA10-776B-4EA5-B64E-E8A3154B1F13": []
+	};
+
 	var colors = {
 		"B6559F92-9D89-462F-8B1F-3F70CAADA912": "dark-blue",//dark-blue
 		"4264BEA3-D32C-4029-BE05-A5FF9A43979C": "green", //green
@@ -184,8 +191,23 @@ var app = (function()
 		return sum / RSSIs[uuid].length;
 	}
 
-	function calculateDistance(uuid, averageRssi) {
-		return Math.pow(10, (baseRSSIs[uuid] - averageRssi) / -20);
+	function calculateDistance(uuid, averageRssi, debug) {
+
+		//return Math.pow(10, (baseRSSIs[uuid] - averageRssi) / -20);
+
+		if(distances[uuid].length == 5) {
+			distances[uuid].shift();
+		}
+		distances[uuid].push(Math.pow(10, (baseRSSIs[uuid] - averageRssi) / -20));
+		var temp = distances[uuid].slice(0).sort();
+		//[0,1,2,3,4]
+		//return the median
+		if(debug) {
+			return JSON.stringify(temp) + ", size: " + distances[uuid].length;
+		} else {
+			return temp[parseInt(temp.length/2)];
+		}
+		
 	}
 
 	function calculatePosition() {
@@ -216,7 +238,10 @@ var app = (function()
 				var averageRssi = calculateRssiAvg(beacon.uuid);
 				// Create tag to display beacon data.
 				var element = $(
-					'<li>'
+					'<div>'
+					+	JSON.stringify(beacon)
+					+	'</div>'
+					+	'<li>'
 					+	'<strong>UUID: ' + beacon.uuid + '</strong><br />'
 					+	'<strong>Color: ' + colors[beacon.uuid] + '</strong><br />'
 					+	'Major: ' + beacon.major + '<br />'
@@ -224,7 +249,8 @@ var app = (function()
 					+	'Proximity: ' + beacon.proximity + '<br />'
 					+	'RSSI: ' + beacon.rssi + '<br />'
 					+   'RSSI Avg.: <span id="' + beacon.uuid + '">' + Math.round(averageRssi * 1000) / 1000 + '</span><br />'
-					+ 	'Distance: ' + Math.round(calculateDistance(beacon.uuid, averageRssi) * 1000) / 1000 + '<br />'
+					+ 	'Distance: ' + calculateDistance(beacon.uuid, averageRssi, true)/*Math.round(calculateDistance(beacon.uuid, averageRssi) * 1000) / 1000*/ + '<br />'
+					+ 	'Distance: ' + Math.round(calculateDistance(beacon.uuid, averageRssi, false) * 1000) / 1000 + '<br />'
 					+ 	'<div style="background:rgb(255,128,64);height:20px;width:'
 					+ 		rssiWidth + '%;"></div>'
 					+ '</li>'
@@ -233,7 +259,7 @@ var app = (function()
 				//alert(document.getElementById(beacon.uuid));
 
 				/* ADDED CODE */
-				if(RSSIs[beacon.uuid].length<=5) {
+				if(RSSIs[beacon.uuid].length <= 5) {
 					RSSIs[beacon.uuid].push(beacon.rssi);
 				} else {
 					RSSIs[beacon.uuid].push(beacon.rssi);
