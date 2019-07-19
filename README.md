@@ -115,7 +115,7 @@ More info on positions:
   | Use data to construct graph | Raghav, Jennifer |
   | Table of Minor # | Tommy |
   
-  - Week 7 (July 11 to July 18): 
+- Week 7 (July 11 to July 18): 
   
   | Completed | Task | Details | Assignment |
   | ---- |------|-----------|---|
@@ -126,6 +126,24 @@ More info on positions:
   | | Plot user location | Use the 4 Beacons to find the user's approximate location - using coordinates | Raghav, Jennifer |
   | | Plot user location | Visualization of user location on canvas map | Kathryn, Yohen |
   | | JSON file read to HTML | Put JSON objects from a JSON file on a table on a HTML file | Tommy |
+  
+  - [ ] To do next week:
+  
+  | Task | Assignment |
+  |------|-----------|
+  
+- Week 8 (July 19 to July 25): 
+  
+  | Completed | Task | Details | Assignment |
+  | ---- |------|-----------|---|
+  | | Research Wifi Indoor Positioning | Research more about using Wifi Access Points to get indoor position. Related keywords: RSsI, fingerprinting, trilateration | Kathryn |
+  | | Research Bluetooth 5.1 | Research more about using Bluetooth 5.1 to get indoor position. Make sure it's Bluetooth 5.1 and not Bluetooth! | Raghav |
+  | | Research More about google Indoor Mapping | Google maps also allows Indoor location (for mapping), but can we make it accurate?|Tommy|
+  | | Research on sensor fusion | Find more info on using all available technologies to get indoor location | Jennifer |
+  | | Research on choke-point concepts | Related to NFC, RFID | Yohen |
+  - Anything with RSSIs, Kalman library will be used.
+  - Findings, at best, should include algorithms used
+  - More information: https://en.wikipedia.org/wiki/Indoor_positioning_system
   
   - [ ] To do next week:
   
