@@ -137,9 +137,9 @@ More info on positions:
   | Completed | Task | Details | Assignment |
   | ---- |------|-----------|---|
   | | Research Wifi Indoor Positioning | Research more about using Wifi Access Points to get indoor position. Related keywords: RSsI, fingerprinting, trilateration | Kathryn |
-  | | Research Bluetooth 5.1 | Research more about using Bluetooth 5.1 to get indoor position. Make sure it's Bluetooth 5.1 and not Bluetooth! | Tommy, Raghav |
+  | | Research Bluetooth 5.1 | Research more about using Bluetooth 5.1 to get indoor position. Make sure it's Bluetooth 5.1 and not Bluetooth! | Tommy, **Raghav** |
   | | Research More about google Indoor Mapping | Google maps also allows Indoor location (for mapping), but can we make it accurate?|Tommy|
-  | | Research on sensor fusion | Find more info on using all available technologies to get indoor location | Kathryn, Jennifer |
+  | | Research on sensor fusion | Find more info on using all available technologies to get indoor location | Kathryn, **Jennifer**, Yohen |
   | | Research on choke-point concepts | Related to NFC, RFID | Yohen |
   - Anything with RSSIs, Kalman library will be used.
   - Findings, at best, should include algorithms used
