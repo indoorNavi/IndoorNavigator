@@ -137,13 +137,30 @@ More info on positions:
   | Completed | Task | Details | Assignment |
   | ---- |------|-----------|---|
   | | Research Wifi Indoor Positioning | Research more about using Wifi Access Points to get indoor position. Related keywords: RSsI, fingerprinting, trilateration | Kathryn |
-  | | Research Bluetooth 5.1 | Research more about using Bluetooth 5.1 to get indoor position. Make sure it's Bluetooth 5.1 and not Bluetooth! | Tommy, **Raghav** |
-  | | Research More about google Indoor Mapping | Google maps also allows Indoor location (for mapping), but can we make it accurate?|Tommy|
+  | :+1: | Research Bluetooth 5.1 | Research more about using Bluetooth 5.1 to get indoor position. Make sure it's Bluetooth 5.1 and not Bluetooth! | Tommy, **Raghav** |
+  | :+1: | Research More about google Indoor Mapping | Google maps also allows Indoor location (for mapping), but can we make it accurate?|Tommy|
   | | Research on sensor fusion | Find more info on using all available technologies to get indoor location | Kathryn, **Jennifer**, Yohen |
   | | Research on choke-point concepts | Related to NFC, RFID | Yohen |
   - Anything with RSSIs, Kalman library will be used.
   - Findings, at best, should include algorithms used
   - More information: https://en.wikipedia.org/wiki/Indoor_positioning_system
+  
+  - [ ] To do next week:
+  
+  | Task | Assignment |
+  |------|-----------|
+ 
+- Week 9 (July 26 to August 31): 
+  
+  | Completed | Task | Details | Assignment |
+  | ---- |------|-----------|---|
+  | :+1: | Outside w Beacons | See if RSSIs + interference have any changes when done outside. **Results:** No changes recorded. Interference is same as when tested indoors | Kathryn, Raghav, Tommy|
+  | | Wifi Access Points Measurement w/out BLE | Measure distances between Wifi APs | Raghav, Jennifer |
+  | | Map Wifi Hotspots + MAC Addresses | This can be done with the map which is done | Yohen, Kathryn |
+  | | Research Libraries | There has to be existing libraries or code online, we just need to *glue* it together | Jennifer, Tommy |
+  | | Test Wifi APs with Beacons | Can the Wifi APs RSSIs be more accurate with Beacons RSSIs? | Tommy, Yohen |
+  - Map is done for FIPKE Floor 1 - use that as the thing
+  - show results at next meeting
   
   - [ ] To do next week:
   
